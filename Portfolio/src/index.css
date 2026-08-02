@@ -1,0 +1,57 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+*{
+  font-family: 'Saira', sans-serif;
+}
+@theme {
+  --color-primary: #3b82f6;
+  --color-secondary: #10b981;
+  --color-accent: #f59e0b;
+  --color-success: #22c55e;
+  --color-warning: #eab308;
+  --color-danger: #ef4444;
+  --color-info: #06b6d4;
+  --color-light: #f8fafc;
+  --color-dark: #1f2937;
+
+   --color-red: #ef4444;
+  --color-orange: #f97316;
+  --color-amber: #f59e0b;
+  --color-yellow: #eab308;
+  --color-lime: #84cc16;
+  --color-green: #22c55e;
+  --color-emerald: #10b981;
+  --color-teal: #14b8a6;
+  --color-cyan: #06b6d4;
+  --color-sky: #0ea5e9;
+  --color-blue: #3b82f6;
+  --color-indigo: #6366f1;
+  --color-violet: #8b5cf6;
+  --color-purple: #a855f7;
+}
+.typeriter {
+  overflow: hidden;
+  border-right: 0.15em solid green;
+  white-space: nowrap;
+  width: 0;
+  align-items: center;
+  animation: typing 3s steps(20, end), forwards,blink-caret 0.75s step-end 4;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 17ch;
+  }
+} 
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: green;
+  }
+}
